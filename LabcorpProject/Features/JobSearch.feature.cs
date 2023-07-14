@@ -21,12 +21,14 @@ namespace LabcorpProject.Features
     [System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
     [NUnit.Framework.TestFixtureAttribute()]
     [NUnit.Framework.DescriptionAttribute("Searching and Applying for a Job")]
+    [NUnit.Framework.CategoryAttribute("JobSearch")]
     public partial class SearchingAndApplyingForAJobFeature
     {
         
         private TechTalk.SpecFlow.ITestRunner testRunner;
         
-        private string[] _featureTags = ((string[])(null));
+        private string[] _featureTags = new string[] {
+                "JobSearch"};
         
 #line 1 "JobSearch.feature"
 #line hidden
@@ -35,7 +37,9 @@ namespace LabcorpProject.Features
         public virtual void FeatureSetup()
         {
             testRunner = TechTalk.SpecFlow.TestRunnerManager.GetTestRunner();
-            TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "Features", "Searching and Applying for a Job", null, ProgrammingLanguage.CSharp, ((string[])(null)));
+            TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "Features", "Searching and Applying for a Job", "In order to apply for a job\r\nAs a job seeker\r\nI want to be able to search for the" +
+                    " specific job title\r\nAnd view the details of the job description", ProgrammingLanguage.CSharp, new string[] {
+                        "JobSearch"});
             testRunner.OnFeatureStart(featureInfo);
         }
         
@@ -75,12 +79,14 @@ namespace LabcorpProject.Features
         
         [NUnit.Framework.TestAttribute()]
         [NUnit.Framework.DescriptionAttribute("Search and Apply for a Job")]
+        [NUnit.Framework.CategoryAttribute("Regression")]
         public virtual void SearchAndApplyForAJob()
         {
-            string[] tagsOfScenario = ((string[])(null));
+            string[] tagsOfScenario = new string[] {
+                    "Regression"};
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Search and Apply for a Job", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
-#line 3
+#line 9
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
             bool isScenarioIgnored = default(bool);
@@ -100,33 +106,33 @@ this.ScenarioInitialize(scenarioInfo);
             else
             {
                 this.ScenarioStart();
-#line 4
+#line 10
   testRunner.Given("I am on the home page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
-#line 5
+#line 11
   testRunner.When("I go to the Careers page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
-#line 6
+#line 12
   testRunner.And("I search for \'Lead Automation Engineer\' on the Jobs page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
-#line 7
+#line 13
   testRunner.And("I click on the job with title \'Lead Automation Engineer\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
-#line 8
+#line 14
   testRunner.Then("the job title should be \'Lead Automation Engineer\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
-#line 9
+#line 15
   testRunner.And("the job location should be \'Burlington, North Carolina, United States of America\'" +
                         "", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
-#line 10
+#line 16
   testRunner.And("the job ID should be \'2336785\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
-#line 11
+#line 17
   testRunner.And("the job requirements should include \'3+ years experience with QA automation or 3 " +
                         "years experience as a Software Engineer (Backend, Frontend, Mobile etc.)\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
-#line 12
+#line 18
   testRunner.And("the bonus points should include \'Selenium\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
                 TechTalk.SpecFlow.Table table1 = new TechTalk.SpecFlow.Table(new string[] {
@@ -150,16 +156,16 @@ this.ScenarioInitialize(scenarioInfo);
                             "Paid parental leave"});
                 table1.AddRow(new string[] {
                             "Ability to be fully remote"});
-#line 13
+#line 19
   testRunner.And("the job offers should include:", ((string)(null)), table1, "And ");
 #line hidden
-#line 24
+#line 30
   testRunner.When("I click the Apply button", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
-#line 25
+#line 31
   testRunner.Then("I decline the legal notice", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
-#line 26
+#line 32
   testRunner.And("I return to the Careers home", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
             }
