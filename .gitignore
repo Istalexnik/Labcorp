@@ -1,3 +1,9 @@
 ﻿obj/
 .vs/
 bin/
+/LabcorpProject/bin/Debug/net6.0/LabcorpProject.dll
+/LabcorpProject/bin/Debug/net6.0/LabcorpProject.pdb
+/LabcorpProject/bin/Debug/net6.0/nunit_random_seed.tmp
+/LabcorpProject/bin/Debug/net6.0/TestExecution.json
+/LabcorpProject/obj/Debug/net6.0/LabcorpProject.dll
+/LabcorpProject/obj/Debug/net6.0/LabcorpProject.pdb

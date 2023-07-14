@@ -16,12 +16,11 @@ namespace LabcorpProject.POM
         }
 
         public IWebElement JobTitle => wait.Until(ExpectedConditions.ElementIsVisible(By.ClassName("job-title")));
-        public IWebElement JobLocation => wait.Until(ExpectedConditions.ElementIsVisible(By.ClassName("job-location")));
-        public IWebElement JobId => wait.Until(ExpectedConditions.ElementIsVisible(By.ClassName("jobId")));
-        public IWebElement JobRequirements => wait.Until(ExpectedConditions.ElementIsVisible(By.XPath("//p[b/u[text()='Requirements:']]/following-sibling::ul/li[1]/p/span")));
-        public IWebElement BonusPoints => wait.Until(ExpectedConditions.ElementIsVisible(By.XPath("//p[b/u[text()='Bonus Points if you have:']]/following-sibling::ul/li[1]/p/span")));
-        public IReadOnlyCollection<IWebElement> JobOffers => wait.Until(ExpectedConditions.PresenceOfAllElementsLocatedBy(By.XPath("//p[b/u[text()='What we offer:']]/following-sibling::ul[1]/li")));
-
+        public IWebElement JobLocation => driver.FindElement(By.ClassName("job-location"));
+        public IWebElement JobId => driver.FindElement(By.ClassName("jobId"));
+        public IWebElement JobRequirements => driver.FindElement(By.XPath("//p[b/u[text()='Requirements:']]/following-sibling::ul/li[1]/p/span"));
+        public IWebElement BonusPoints => driver.FindElement(By.XPath("//p[b/u[text()='Bonus Points if you have:']]/following-sibling::ul/li[1]/p/span"));
+        public IReadOnlyCollection<IWebElement> JobOffers => driver.FindElements(By.XPath("//p[b/u[text()='What we offer:']]/following-sibling::ul[1]/li"));
 
         public string GetJobTitle()
         {

@@ -1,5 +1,11 @@
-﻿Feature: Searching and Applying for a Job
+﻿@JobSearch
+Feature: Searching and Applying for a Job
+In order to apply for a job
+As a job seeker
+I want to be able to search for the specific job title
+And view the details of the job description
 
+@Regression
 Scenario: Search and Apply for a Job
   Given I am on the home page
   When I go to the Careers page
