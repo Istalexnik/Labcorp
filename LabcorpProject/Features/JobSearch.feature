@@ -2,7 +2,7 @@
 Feature: Searching and Applying for a Job
 In order to apply for a job
 As a job seeker
-I want to be able to search for the specific job title
+I want to be able to search for a specific job title
 And view the details of the job description
 
 @Regression
