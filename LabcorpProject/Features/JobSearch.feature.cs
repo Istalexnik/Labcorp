@@ -37,8 +37,8 @@ namespace LabcorpProject.Features
         public virtual void FeatureSetup()
         {
             testRunner = TechTalk.SpecFlow.TestRunnerManager.GetTestRunner();
-            TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "Features", "Searching and Applying for a Job", "In order to apply for a job\r\nAs a job seeker\r\nI want to be able to search for the" +
-                    " specific job title\r\nAnd view the details of the job description", ProgrammingLanguage.CSharp, new string[] {
+            TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "Features", "Searching and Applying for a Job", "In order to apply for a job\r\nAs a job seeker\r\nI want to be able to search for a s" +
+                    "pecific job title\r\nAnd view the details of the job description", ProgrammingLanguage.CSharp, new string[] {
                         "JobSearch"});
             testRunner.OnFeatureStart(featureInfo);
         }
